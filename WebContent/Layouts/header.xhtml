@@ -7,11 +7,11 @@
 	<ui:composition>
 
 		<h:panelGroup layout="block" class="header">
-  			<h:link value="Marc D. Teixeira" output="" styleClass="logo" />
+  			<h:link value="Marc D. Teixeira" outcome="#{navBarController.moveToHomePage()}" styleClass="logo" />
   			<h:panelGroup layout="block" class="header-right">
-    			<h:link value="Home" output="#{navBarController.homePage}" styleclass="#{navBarController.getButtonClass('Home')}" />
-    			<h:link value="Contact" output="#{navBarController.contactPage}" styleclass="" />
-    			<h:link value="About Me" output="" styleclass="" />
+    			<h:link value="Home" outcome="#{navBarController.moveToHomePage()}" styleclass="" />
+    			<h:link value="Contact" outcome="#{navBarController.moveToContactPage()}" styleclass="" />
+    			<h:link value="About Me" outcome="#{navBarController.moveToAboutMePage()}" styleclass="" />
   			</h:panelGroup>
 		</h:panelGroup>
 

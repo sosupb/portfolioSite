@@ -1,9 +1,17 @@
 @charset "ISO-8859-1";
 
+body {
+	margin: 0;
+	padding: 0;
+	
+}
+
 .header {
   overflow: hidden;
   background-color: #f1f1f1;
   background-image: url("#{resource['default:img/banner.jpg']}");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 20px 10px;
 }
 
@@ -43,6 +51,11 @@
   float: right;
 }
 
+/* Spread out the links on the right */
+.header-right a {
+	margin: 5px;
+}
+
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
   .header a {
@@ -53,4 +66,18 @@
   .header-right {
     float: none;
   }
+}
+
+/* Fixed Footer*/
+.fixedFooter {
+	position: fixed;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+  	background-color: #f1f1f1;
+  	background-image: url("#{resource['default:img/banner2.png']}");
+  	filter: brightness(50%);
+  	object-fit: cover;
+  	color: white;
+  	text-align: center;
 }

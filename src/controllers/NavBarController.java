@@ -17,9 +17,6 @@ public class NavBarController {
 	
 	private static final Logger LOGGER = Logger.getLogger(NavBarController.class);
 	
-	private String homePage = "/index.xhtml";
-	private String contactPage = "/pages/Contact.xhmtl";
-	
 	public NavBarController() {
 		
 	}
@@ -29,7 +26,7 @@ public class NavBarController {
 	 * @return home page name
 	 */
 	public String moveToHomePage() {
-		return "/index.xhtml";
+		return "/index";
 	}
 	
 	/**
@@ -37,7 +34,7 @@ public class NavBarController {
 	 * @return contact page name
 	 */
 	public String moveToContactPage() {
-		return "/pages/Contact.xhtml";
+		return "/pages/Contact";
 	}
 	
 	/**
@@ -45,17 +42,9 @@ public class NavBarController {
 	 * @return about me page name
 	 */
 	public String moveToAboutMePage() {
-		return "/pages/AboutMe.xhtml";
+		return "/pages/AboutMe";
 	}
-	
-	public String getHomePage() {
-		return this.homePage;
-	}
-	
-	public String getContactPage() {
-		return this.contactPage;
-	}
-	
+
 	/**
 	 * This method takes in a hyperlink tab and identifies if it is for the current page to send proper CSS
 	 * @return the class type for this hyperlink
@@ -65,7 +54,7 @@ public class NavBarController {
 		String viewId = facesContext.getViewRoot().getViewId();
 		
 		LOGGER.info("The current view id is: " + viewId);
-		
+		System.out.println("The current view id is: " + viewId);
 		if(viewId == id) {
 			return "active";
 		}

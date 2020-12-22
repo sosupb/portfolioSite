@@ -55,7 +55,7 @@ public class NavBarController {
 		
 		LOGGER.info("The current view id is: " + viewId);
 		System.out.println("The current view id is: " + viewId);
-		if(viewId == id) {
+		if(viewId.equals(id)) {
 			return "active";
 		}
 		return "";

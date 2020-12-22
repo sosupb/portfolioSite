@@ -6,12 +6,12 @@
 
 	<ui:composition>
 
-		<h:panelGroup layout="block" class="header">
+		<h:panelGroup layout="block" styleClass="header">
   			<h:link value="Marc D. Teixeira" outcome="#{navBarController.moveToHomePage()}" styleClass="logo" />
-  			<h:panelGroup layout="block" class="header-right">
-    			<h:link value="Home" outcome="#{navBarController.moveToHomePage()}" styleclass="" />
-    			<h:link value="Contact" outcome="#{navBarController.moveToContactPage()}" styleclass="" />
-    			<h:link value="About Me" outcome="#{navBarController.moveToAboutMePage()}" styleclass="" />
+  			<h:panelGroup layout="block" styleClass="header-right">
+    			<h:link value="Home" outcome="#{navBarController.moveToHomePage()}" styleClass="#{navBarController.getButtonClass('/index.xhtml')}" />
+    			<h:link value="Contact" outcome="#{navBarController.moveToContactPage()}" styleClass="" />
+    			<h:link value="About Me" outcome="#{navBarController.moveToAboutMePage()}" styleClass="" />
   			</h:panelGroup>
 		</h:panelGroup>
 

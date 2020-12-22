@@ -3,16 +3,46 @@
 body {
 	margin: 0;
 	padding: 0;
-	
+	background-color: #bfbfbf;
 }
 
+.content h1{
+	text-align: center;
+	font-family: "Verdana";
+}
+
+/* Project list styles */
+.projectListWrapper {
+	padding: 15px;
+}
+
+/* Card styles for the list of projects */
+.projectCard {
+	max-width: 600px;
+	margin: 0 10% 5% 10%;
+	position: relative;
+	color: white;
+	background-color: #4a4a4a;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+	transition: 0.3s;
+}
+
+.projectCard:hover {
+	box-shadow: 0 16px 32px 0 rgba(0,0,0,1);
+	top: -1px;
+	left: -1px;
+}
+
+.insideCardWrapper {
+	padding: 2px 16px;
+}
+
+/* Header at the top of each page */
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
-  background-image: url("#{resource['default:img/banner.jpg']}");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #38304a;
   padding: 20px 10px;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,1);
 }
 
 /* Style the header links */
@@ -30,8 +60,16 @@ body {
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header a.logo {
-  font-size: 25px;
-  font-weight: bold;
+  font-family: "Cinzel", "serif";
+  font-size: 50px;
+  color: #eaeaea;
+  transition: 0.3s;
+  background-color: rgba(0,0,0,0);
+}
+
+.header a.logo:hover {
+  background-color: rgba(0,0,0,0);
+  color: #eaeaea;
 }
 
 /* Change the background color on mouse-over */
@@ -76,7 +114,9 @@ body {
   	width: 100%;
   	background-color: #f1f1f1;
   	background-image: url("#{resource['default:img/banner2.png']}");
-  	filter: brightness(50%);
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	filter: brightness(80%);
   	object-fit: cover;
   	color: white;
   	text-align: center;

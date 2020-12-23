@@ -5,7 +5,7 @@
  *
  */
 
-require_once "autoloader.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/autoloader.php";
 
 class NavBarService {
 	
@@ -14,15 +14,15 @@ class NavBarService {
 	}
 	
 	public function moveToHomePage() {
-		return "/index";
+		return $_SERVER['DOCUMENT_ROOT'] . "/index.php";
 	}
 	
 	public function moveToContactPage() {
-		return "/pages/Contact";
+	    return $_SERVER['DOCUMENT_ROOT'] . "/presentation/pages/Contact.php";
 	}
 	
 	public function moveToAboutMePage() {
-		return "/pages/AboutMe";
+	    return $_SERVER['DOCUMENT_ROOT'] . "/presentation/pages/AboutMe.php";
 	}
 
 	/**

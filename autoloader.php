@@ -16,7 +16,7 @@ spl_autoload_register(function($class){
     // echo "number of directories different : " . $numberOfLastDirectories . "<br>";
     
     // list of possible locations that classes are found in this project
-    $directories = ['businessServices', 'businessServices/models'];
+    $directories = ['businessServices', 'businessServices/models', 'businessServices/logger', 'presentation/Layouts', 'presentation/pages', 'resources/default/img', 'resources/default/css'];
     
     foreach($directories as $d){
         $currentDirectory = $d;

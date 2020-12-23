@@ -139,18 +139,20 @@ body {
   }
 }
 
+/* Content wrapper */
+.content {
+	display: block;
+	margin-bottom: 60px;
+	position: relative;
+}
+
 /* Fixed Footer*/
 .fixedFooter {
 	position: fixed;
-  	left: 0;
   	bottom: 0;
+  	height: 60px;
   	width: 100%;
-  	background-color: #f1f1f1;
-  	background-image: url("#{resource['default:img/banner2.png']}");
-  	background-repeat: no-repeat;
-  	background-size: cover;
-  	filter: brightness(80%);
-  	object-fit: cover;
-  	color: white;
+  	background-color: #38304a;
+  	color: #c5c79a;
   	text-align: center;
 }

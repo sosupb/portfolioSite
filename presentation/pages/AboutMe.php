@@ -1,18 +1,18 @@
 <?php
 	
-	$title = "Contact Page";
-	include "/presentation/Layouts/_header.php";
+	$title = "About Me Page";
+	include $_SERVER['DOCUMENT_ROOT'] . "/presentation/Layouts/_header.php";
 	
 	$bs = new ProjectListService();
 ?>
 
 	<div class="content">
-		<h1>Contact</h1>
+		<h1>About Me</h1>
 	</div>
 
 <?php 
 
-	include "/presentation/Layouts/_footer.php";
+    include $_SERVER['DOCUMENT_ROOT'] . "/presentation/Layouts/_footer.php";
 
 ?>
 

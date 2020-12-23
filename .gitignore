@@ -60,3 +60,4 @@ build/*
 *.class
 /build/
 .buildpath
+/vendor/

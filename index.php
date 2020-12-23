@@ -1,9 +1,10 @@
 <?php
 	
 	$title = "Home Page";
-	include "/presentation/Layouts/_header.php";
+	include $_SERVER['DOCUMENT_ROOT'] . "/presentation/Layouts/_header.php";
 	
 	$bs = new ProjectListService();
+	$bs = new ActivityLogger($bs);
 ?>
 
 <div class="content">
@@ -16,18 +17,18 @@
 		<div class="projectCardWrapper">
 			
 			<div class="projectCard">
-	  			<img src="<?=$project->img?>" alt="<?=$project->name?>" style="width:100%"/>
+	  			<img src="<?=$project->getImg()?>" alt="<?=$project->getName()?>" style="width:100%"/>
 		  		<div class="insideCardWrapper">
-	    			<h4>Name: <?=$project->name?></h4>
-	    			<p>Languages: <?=$project->language?></p>
-	    			<p>Skills: <?=$project->skills?></p>
-	    			<p>Date: <?=$project->date?></p>
-	    			<p>Description: <?=$project->description?></p>
+	    			<h4>Name: <?=$project->getName()?></h4>
+	    			<p>Languages: <?=$project->getLanguage()?></p>
+	    			<p>Skills: <?=$project->getSkills()?></p>
+	    			<p>Date: <?=$project->getDate()?></p>
+	    			<p>Description: <?=$project->getDescription()?></p>
 	  			</div>
 			</div>
 			
 			<div class="hiddenCard">
-				<img src="<?=$project->img?>" alt="<?=$project->name?>" style="width: 100%; display: flex;"/>
+				<img src="<?=$project->getImg()?>" alt="<?=$project->getName()?>" style="width: 100%; display: flex;"/>
 			</div>
 			
 		</div>
@@ -40,6 +41,6 @@
 
 <?php 
 
-	include "/presentation/Layouts/_footer.php";
+    include $_SERVER['DOCUMENT_ROOT'] . "/presentation/Layouts/_footer.php";
 
 ?>

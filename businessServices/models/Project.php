@@ -1,6 +1,6 @@
 <?php
 
-require_once "/autoloader.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/autoloader.php";
 
 class Project {
 	
@@ -34,6 +34,7 @@ class Project {
 		$obj->skills = $skills;
 		$obj->date = $date;
 		$obj->description = $description;
+		return $obj;
 	}
 
 	/**

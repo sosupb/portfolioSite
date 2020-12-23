@@ -1,5 +1,5 @@
 <?php 
-	require_once("autoloader.php");
+	require_once $_SERVER['DOCUMENT_ROOT'] . "/autoloader.php";
 	
 	$navService = new NavBarService();
 ?>
@@ -9,7 +9,7 @@
 	<head>
 		<link rel="preconnect" href="https://fonts.gstatic.com"/>
 		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@578&amp;display=swap" rel="stylesheet"/>
-		<link href="/resources/css/styles.css" rel="stylesheet"/>
+		<link href="/resources/default/css/styles.css" type="text/css" rel="stylesheet"/>
 		
 		<title><?=$title?></title>
 	</head>

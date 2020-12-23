@@ -1,7 +1,7 @@
 <?php
 	
 	$title = "Contact Page";
-	include "/presentation/Layouts/_header.php";
+	include $_SERVER['DOCUMENT_ROOT'] . "/presentation/Layouts/_header.php";
 	
 	$bs = new ProjectListService();
 ?>
@@ -12,6 +12,6 @@
 
 <?php 
 
-	include "/presentation/Layouts/_footer.php";
+    include $_SERVER['DOCUMENT_ROOT'] . "/presentation/Layouts/_footer.php";
 
 ?>

@@ -35,8 +35,9 @@ class AbstractActivityLogger {
         
         //add in MonoLog support
         $this->logger = new Logger('activity_logger');
+        $this->logger->pushHandler(new StreamHandler(__DIR__ . '/logs/app.log'));
         $this->logger->pushHandler(new StreamHandler('php://stderr', Logger::DEBUG));
-        $this->logger->info("created intercepter for " . get_class($object) . "\n");
+        $this->logger->info("Created intercepter for " . get_class($object) . "\n");
     }
     
     //interceptor methods

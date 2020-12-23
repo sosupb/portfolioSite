@@ -52,6 +52,7 @@ class ActivityLogger extends AbstractActivityLogger {
      */
     public static function info($message) {
         $logger = new Logger('activity_logger');
+        $logger->pushHandler(new StreamHandler(__DIR__ . '/logs/app.log'));
         $logger->pushHandler(new StreamHandler('php://stderr', Logger::DEBUG));
         $logger->info($message . "\n");
     }
@@ -62,6 +63,7 @@ class ActivityLogger extends AbstractActivityLogger {
      */
     public static function error($message) {
         $logger = new Logger('activity_logger');
+        $logger->pushHandler(new StreamHandler(__DIR__ . '/logs/app.log'));
         $logger->pushHandler(new StreamHandler('php://stderr', Logger::ERROR));
         $logger->error($message . "\n");
     }
@@ -72,6 +74,7 @@ class ActivityLogger extends AbstractActivityLogger {
      */
     public static function warning($message) {
         $logger = new Logger('activity_logger');
+        $logger->pushHandler(new StreamHandler(__DIR__ . '/logs/app.log'));
         $logger->pushHandler(new StreamHandler('php://stderr', Logger::WARNING));
         $logger->warning($message . "\n");
     }

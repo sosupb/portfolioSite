@@ -9,7 +9,7 @@
 	<head>
 		<link rel="preconnect" href="https://fonts.gstatic.com"/>
 		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@578&amp;display=swap" rel="stylesheet"/>
-		<link href="resources/css/styles.css" rel="stylesheet"/>
+		<link href="/resources/css/styles.css" rel="stylesheet"/>
 		
 		<title><?=$title?></title>
 	</head>

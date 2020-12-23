@@ -1,7 +1,7 @@
 <?php
 	
 	$title = "Home Page";
-	include_once __DIR__ . "/presentation/Layouts/_header.php";
+	include_once getcwd() . "/presentation/Layouts/_header.php";
 	
 	$bs = new ProjectListService();
 	$bs = new ActivityLogger($bs);

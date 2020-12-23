@@ -5,7 +5,7 @@
  *
  */
 
-require_once $_SERVER['DOCUMENT_ROOT'] . "/autoloader.php";
+require_once __DIR__ . "/autoloader.php";
 
 class NavBarService {
 	

@@ -1,7 +1,7 @@
 <?php
 	
 	$title = "About Me Page";
-	include_once $_SERVER['DOCUMENT_ROOT'] . "/presentation/Layouts/_header.php";
+	include_once __DIR__ . "/presentation/Layouts/_header.php";
 	
 	$bs = new ProjectListService();
 ?>

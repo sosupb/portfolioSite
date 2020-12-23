@@ -58,3 +58,4 @@ client/shade/dependency-reduced-pom.xml
 # ignore all the build classes
 build/*
 *.class
+/build/

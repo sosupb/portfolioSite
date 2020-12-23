@@ -17,18 +17,18 @@
 		<div class="projectCardWrapper">
 			
 			<div class="projectCard">
-	  			<img src="<?=$project->getImg()?>" alt="<?=$project->getName()?>" style="width:100%"/>
+	  			<img src="<?echo $project->getImg();?>" alt="<?echo $project->getName();?>" style="width:100%"/>
 		  		<div class="insideCardWrapper">
-	    			<h4>Name: <?=$project->getName()?></h4>
-	    			<p>Languages: <?=$project->getLanguage()?></p>
-	    			<p>Skills: <?=$project->getSkills()?></p>
-	    			<p>Date: <?=$project->getDate()?></p>
-	    			<p>Description: <?=$project->getDescription()?></p>
+	    			<h4>Name: <?echo $project->getName();?></h4>
+	    			<p>Languages: <?echo$project->getLanguage();?></p>
+	    			<p>Skills: <?echo $project->getSkills();?></p>
+	    			<p>Date: <?echo $project->getDate();?></p>
+	    			<p>Description: <?echo $project->getDescription();?></p>
 	  			</div>
 			</div>
 			
 			<div class="hiddenCard">
-				<img src="<?=$project->getImg()?>" alt="<?=$project->getName()?>" style="width: 100%; display: flex;"/>
+				<img src="<?echo $project->getImg();?>" alt="<?echo $project->getName();?>" style="width: 100%; display: flex;"/>
 			</div>
 			
 		</div>

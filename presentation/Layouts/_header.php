@@ -16,10 +16,10 @@
 	<body>
 	
 		<div class="header">
-  			<a href="<?=$navService->moveToHomePage()?>" class="logo">Marc D. Teixeira</a>
+  			<a href="<?echo $navService->moveToHomePage();?>" class="logo">Marc D. Teixeira</a>
   			<div class="header-right">
-    			<a href="<?=$navService->moveToHomePage()?>" class="" >Home</a>
-    			<a href="<?=$navService->moveToContactPage()?>" class="" >Contact</a>
-    			<a href="<?=$navService->moveToAboutMePage()?>" class="" >About Me</a>
+    			<a href="<?echo $navService->moveToHomePage();?>" class="" >Home</a>
+    			<a href="<?echo $navService->moveToContactPage();?>" class="" >Contact</a>
+    			<a href="<?echo $navService->moveToAboutMePage();?>" class="" >About Me</a>
   			</div>
 		</div>

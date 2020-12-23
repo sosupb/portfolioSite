@@ -14,15 +14,15 @@ class NavBarService {
 	}
 	
 	public function moveToHomePage() {
-		return $_SERVER['DOCUMENT_ROOT'] . "/index.php";
+		return "/index.php";
 	}
 	
 	public function moveToContactPage() {
-	    return $_SERVER['DOCUMENT_ROOT'] . "/presentation/pages/Contact.php";
+	    return "/presentation/pages/Contact.php";
 	}
 	
 	public function moveToAboutMePage() {
-	    return $_SERVER['DOCUMENT_ROOT'] . "/presentation/pages/AboutMe.php";
+	    return "/presentation/pages/AboutMe.php";
 	}
 
 	/**

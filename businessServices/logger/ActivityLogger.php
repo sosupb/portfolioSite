@@ -1,7 +1,7 @@
 <?php 
 
-require_once getcwd() . '/autoloader.php';
-require_once getcwd() . '/vendor/autoload.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/autoloader.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;

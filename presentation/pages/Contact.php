@@ -1,7 +1,7 @@
 <?php
 	
 	$title = "Contact Page";
-	include_once getcwd() . "/presentation/Layouts/_header.php";
+	include_once $_SERVER['DOCUMENT_ROOT'] . "/presentation/Layouts/_header.php";
 	
 	$bs = new ProjectListService();
 ?>
@@ -12,6 +12,6 @@
 
 <?php 
 
-    include_once getcwd() . "/presentation/Layouts/_footer.php";
+    include_once $_SERVER['DOCUMENT_ROOT'] . "/presentation/Layouts/_footer.php";
 
 ?>

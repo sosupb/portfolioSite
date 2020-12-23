@@ -1,7 +1,7 @@
 <?php
 	
 	$title = "Home Page";
-	include_once getcwd() . "/presentation/Layouts/_header.php";
+	include_once $_SERVER['DOCUMENT_ROOT'] . "/presentation/Layouts/_header.php";
 	
 	$bs = new ProjectListService();
 	$bs = new ActivityLogger($bs);
@@ -41,6 +41,6 @@
 
 <?php 
 
-    include_once getcwd() . "/presentation/Layouts/_footer.php";
+    include_once $_SERVER['DOCUMENT_ROOT'] . "/presentation/Layouts/_footer.php";
 
 ?>

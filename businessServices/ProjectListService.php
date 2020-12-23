@@ -1,6 +1,6 @@
 <?php
 
-require_once getcwd() . "/autoloader.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/autoloader.php";
 
 class ProjectListService {
 	

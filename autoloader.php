@@ -1,7 +1,7 @@
 <?php
 
-require_once getcwd() . "/businessServices/logger/AbstractActivityLogger.php";
-require_once getcwd() . "/businessServices/logger/ActivityLogger.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/businessServices/logger/AbstractActivityLogger.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/businessServices/logger/ActivityLogger.php";
 
 /**
  * autoloader.php

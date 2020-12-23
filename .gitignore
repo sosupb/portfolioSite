@@ -56,4 +56,5 @@ build.metadata
 arquillian/*/server.log*
 client/shade/dependency-reduced-pom.xml
 # ignore all the build classes
-build/
+build/*
+*.class

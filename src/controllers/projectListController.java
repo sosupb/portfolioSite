@@ -22,7 +22,7 @@ public class projectListController {
 	@PostConstruct
 	public void init() {
 		projects = new ArrayList<project>();
-		projects.add(new project("Dark Current", "img/darkCurrentThumbnail.jpg", "C#, XNA Studio", "Visual Studio, ", "2015", "2D, Top down shooter."));
+		projects.add(new project("Dark Current", "img/darkCurrentThumbnail.png", "C#, XNA Studio", "Visual Studio, ", "2015", "2D, Top down shooter."));
 		projects.add(new project("Online Store Application", "img/storeAppThumbnail.png", "PHP, HTML, CSS, SQL", "CI/CD, git, backend design", "2018", 
 										"An online grocery store. Users can register or login, add to thier carts and checkout purchases."));
 		projects.add(new project("Music Album Library Application", "img/albumLibraryThumbnail.png", "PHP, HTML, CSS, SQL", "CI/CD, git, backend design", "2020", 

@@ -12,19 +12,28 @@
 				<h1>Projects</h1>
 				
 				<ui:repeat value="#{projectListController.projects}" var="project">
-						
-					<h:panelGroup layout="block" class="projectCard">
-			  			<h:graphicImage library="default" name="#{project.img}" alt="#{project.name}" style="width:100%"/>
-			  			<h:panelGroup layout="block" styleClass="insideCardWrapper">
-			    			<h4>Name: #{project.name}</h4>
-			    			<p>Languages: #{project.language}</p>
-			    			<p>Skills: #{project.skills}</p>
-			    			<p>Date: #{project.date}</p>
-			    			<p>Description: #{project.description}</p>
-			  			</h:panelGroup>
-					</h:panelGroup>
 				
+					<h:panelGroup layout="block" class="projectCardWrapper">
+						
+						<h:panelGroup layout="block" class="projectCard">
+				  			<h:graphicImage library="default" name="#{project.img}" alt="#{project.name}" style="width:100%"/>
+					  			<h:panelGroup layout="block" styleClass="insideCardWrapper">
+				    			<h4>Name: #{project.name}</h4>
+				    			<p>Languages: #{project.language}</p>
+				    			<p>Skills: #{project.skills}</p>
+				    			<p>Date: #{project.date}</p>
+				    			<p>Description: #{project.description}</p>
+				  			</h:panelGroup>
+						</h:panelGroup>
+						
+						<h:panelGroup layout="block" class="hiddenCard">
+							<h:graphicImage library="default" name="#{project.img}" alt="#{project.name}" style="width: 100%; display: flex;"/>
+						</h:panelGroup>
+						
+					</h:panelGroup>
+					
 				</ui:repeat>
+				
 			</h:panelGroup>
 		</ui:define>
 	</ui:composition>

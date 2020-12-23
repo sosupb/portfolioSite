@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__ . '/autoloader.php';
-require_once __DIR__ . '/vendor/autoload.php';
+require_once getcwd() . '/autoloader.php';
+require_once getcwd() . '/vendor/autoload.php';
 
 
 use Monolog\Logger;

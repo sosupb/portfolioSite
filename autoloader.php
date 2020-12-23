@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__ . "/businessServices/logger/AbstractActivityLogger.php";
-require_once __DIR__ . "/businessServices/logger/ActivityLogger.php";
+require_once getcwd() . "/businessServices/logger/AbstractActivityLogger.php";
+require_once getcwd() . "/businessServices/logger/ActivityLogger.php";
 
 /**
  * autoloader.php

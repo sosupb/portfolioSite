@@ -41,6 +41,6 @@
 
 <?php 
 
-    include_once __DIR__ . "/presentation/Layouts/_footer.php";
+    include_once getcwd() . "/presentation/Layouts/_footer.php";
 
 ?>

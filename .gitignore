@@ -61,3 +61,6 @@ build/*
 /build/
 .buildpath
 /vendor/
+
+#composer
+composer.phar

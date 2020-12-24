@@ -1,4 +1,10 @@
+<?php 
 
+/**
+ * This is a partial file to create the footer on the bottom of each page.
+ */
+
+?>
 
 
 		<div class="fixedFooter">

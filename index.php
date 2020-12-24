@@ -8,7 +8,8 @@
 ?>
 
 <div class="content">
-	<h1>Home</h1>
+	
+	<?php include $_SERVER['DOCUMENT_ROOT'] . "/presentation/Layouts/_profileCard.php"?>
 	
 </div>
 

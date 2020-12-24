@@ -79,3 +79,6 @@ composer.phar
 
 #gimp files
 *.xcf
+
+#counter.txt file
+counter.txt

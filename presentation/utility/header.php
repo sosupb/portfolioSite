@@ -7,7 +7,7 @@
         
         $counter = 0;
         
-        if(file_exists($_SERVER['DOCUMENT_ROOT'] . "/resources/default/counter.txt", "r")) {
+        if(file_exists($_SERVER['DOCUMENT_ROOT'] . "/resources/default/counter.txt")) {
             try {
                 $file = fopen($_SERVER['DOCUMENT_ROOT'] . "/resources/default/counter.txt", "r");
                 if(is_null($file)){
@@ -28,9 +28,15 @@
             }
         } else {
             $counter = 1;
-            $file = fopen($_SERVER['DOCUMENT_ROOT'] . "/resources/default/counter.txt", "w");
-            fwrite($file, $counter);
-            fclose($file);
+            try{
+                $file = fopen($_SERVER['DOCUMENT_ROOT'] . "/resources/default/counter.txt", "w");
+                fwrite($file, $counter);
+                fclose($file);
+            }
+            catch(Exception $e) {
+                ActivityLogger::warning("There was a problem while creating new counter file! " . $e->getMessage());
+                $counter = 0;
+            }
         }
         $_SESSION['counter'] = $counter;
     }

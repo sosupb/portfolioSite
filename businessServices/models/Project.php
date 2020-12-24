@@ -10,6 +10,7 @@ class Project {
 	private $skills;
 	private $date;
 	private $description;
+	private $panel;
 	
     private function __construct(){
 	    
@@ -23,10 +24,11 @@ class Project {
 		$obj->skills = $newProject->skills;
 		$obj->date = $newProject->date;
 		$obj->description = $newProject->description;
+		$obj->panel = $newProject->panel;
 		return $obj;
 	}
 	
-	public static function settingConstructor($name, $img, $language, $skills, $date, $description) {
+	public static function settingConstructor($name, $img, $language, $skills, $date, $description, $panel) {
 	    $obj = new Project();
 		$obj->name = $name;
 		$obj->img = $img;
@@ -34,9 +36,24 @@ class Project {
 		$obj->skills = $skills;
 		$obj->date = $date;
 		$obj->description = $description;
+		$obj->panel = $panel;
 		return $obj;
 	}
 
+	/**
+	 * @return mixed
+	 */
+	public function getPanel() {
+	    return $this->panel;
+	}
+	
+	/**
+	 * @param mixed $panel
+	 */
+	public function setPanel($panel) {
+	    $this->panel = $panel;
+	}
+	
 	/**
 	 * @return mixed
 	 */

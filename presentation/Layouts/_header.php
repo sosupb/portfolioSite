@@ -17,8 +17,8 @@ include_once $_SERVER['DOCUMENT_ROOT'] . "/presentation/utility/header.php";
 		<div class="header">
   			<a href="<?echo $navService->moveToHomePage();?>" class="logo">Marc D. Teixeira</a>
   			<div class="header-right">
-    			<a href="<?echo $navService->moveToHomePage();?>" class="" >Home</a>
+    			<a href="<?echo $navService->moveToProjectsPage();?>" class="" >Projects</a>
     			<a href="<?echo $navService->moveToContactPage();?>" class="" >Contact</a>
-    			<a href="<?echo $navService->moveToAboutMePage();?>" class="" >About Me</a>
+    			<a href="<?echo $navService->moveToAboutPage();?>" class="" >About</a>
   			</div>
 		</div>

@@ -32,29 +32,41 @@ transaction.log
 *.swp
 /.gitk-tmp.*
 atlassian-ide-plugin.xml
+
 # temp files
 *~
+
 # maven versions plugin
 pom.xml.versionsBackup
+
 # hprof dumps
 /*.hprof
+
 # ignore 'randomly' strewn around logs
 server.log
+
 # ignore java crashes
 hs_err_pid*.log
+
 # H2 databases produced by tests
 *.h2.db
+
 # JBoss transaction generated files
 PutObjectStoreDirHere
+
 # ignore mvn-rpmbuild repo
 /.m2
+
 # ignore eap repo
 local-repo-eap
+
 # ignore the build metadata created by the build metadata plugin
 build.metadata
+
 #These keep hanging around
 arquillian/*/server.log*
 client/shade/dependency-reduced-pom.xml
+
 # ignore all the build classes
 build/*
 *.class
@@ -64,3 +76,6 @@ build/*
 
 #composer
 composer.phar
+
+#gimp files
+*.xcf

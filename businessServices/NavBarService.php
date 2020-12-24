@@ -18,11 +18,15 @@ class NavBarService {
 	}
 	
 	public function moveToContactPage() {
-	    return "/presentation/pages/Contact.php";
+	    return "/presentation/pages/ContactPage.php";
 	}
 	
-	public function moveToAboutMePage() {
-	    return "/presentation/pages/AboutMe.php";
+	public function moveToAboutPage() {
+	    return "/presentation/pages/AboutPage.php";
+	}
+	
+	public function moveToProjectsPage() {
+	    return "/presentation/pages/ProjectsPage.php";
 	}
 
 	/**

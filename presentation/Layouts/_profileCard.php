@@ -15,17 +15,8 @@
     <a href="#"><i class="fa fa-twitter"></i></a>
     <a href="#"><i class="fa fa-linkedin"></i></a>
     <a href="#"><i class="fa fa-facebook"></i></a>
-    <p><button onclick="redirect()">Contact</button></p>
+    <p><a href="<?php echo navService->moveToContactPage(); ?>" class="profileButton" >Contact</a></p>
 </div>
-
-
-<script type="text/javascript">
-
-function redirect() {
-	window.location="<?php echo navService->moveToContactPage(); ?>";
-}
-
-</script>
 
 
 

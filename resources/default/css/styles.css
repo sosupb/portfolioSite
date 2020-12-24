@@ -155,4 +155,9 @@ body {
   	background-color: #38304a;
   	color: #c5c79a;
   	text-align: center;
+  	display: flex;
+}
+
+.fixedFooter h2 {
+	justify-content: center;
 }

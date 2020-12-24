@@ -8,15 +8,24 @@
 ?>
 
 <div class="profileCard">
-    <img src="headShot.jpg" alt="Marc" style="width:100%">
+    <img src="<?php echo $_SERVER['DOCUMENT_ROOT'] . '/resources/default/img/headShot.jpg';?>" alt="Marc" style="width:100%">
     <h1>Marc Teixeira</h1>
-    <p class="profileTitle">title stuff</p>
-    <p>stuff</p>
+    <p class="profileTitle">Software Engineer, Programmer</p>
+    <p>Grand Canyon University</p>
     <a href="#"><i class="fa fa-twitter"></i></a>
     <a href="#"><i class="fa fa-linkedin"></i></a>
     <a href="#"><i class="fa fa-facebook"></i></a>
-    <p><button>Contact</button></p>
+    <p><button onclick="redirect()">Contact</button></p>
 </div>
+
+
+<script type="text/javascript">
+
+function redirect() {
+	window.location="<?php echo navService->moveToContactPage(); ?>";
+}
+
+</script>
 
 
 

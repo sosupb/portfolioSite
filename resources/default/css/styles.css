@@ -28,7 +28,7 @@ body {
 }
 
 /* Profile card buttons */
-.profileButton a{
+.profileButton{
 	border: none;
 	outline: 0;
 	display: inline-block;

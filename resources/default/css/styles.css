@@ -154,10 +154,14 @@ body {
   	width: 100%;
   	background-color: #38304a;
   	color: #c5c79a;
-  	text-align: center;
-  	display: flex;
 }
 
 .fixedFooter h2 {
-	justify-content: center;
+	float: left;
+	width: 75%;
+}
+
+.fixedFooter h3 {
+	float: right;
+	margin-right: 25px;
 }

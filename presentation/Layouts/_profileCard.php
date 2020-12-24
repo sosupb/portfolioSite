@@ -15,7 +15,7 @@
     <a href="#"><i class="fa fa-twitter"></i></a>
     <a href="#"><i class="fa fa-linkedin"></i></a>
     <a href="#"><i class="fa fa-facebook"></i></a>
-    <p><a href="<?php echo navService->moveToContactPage(); ?>" class="profileButton" >Contact</a></p>
+    <p><a href="<?echo $navService->moveToContactPage();?>" class="profileButton" >Contact</a></p>
 </div>
 
 

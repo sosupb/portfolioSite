@@ -38,6 +38,7 @@ body {
 .profileButton a{
 	border: none;
 	outline: 0;
+	height: 21px;
 	display: inline-block;
 	padding: 0px;
 	color: white;

@@ -8,7 +8,7 @@
 ?>
 
 <div class="profileCard">
-    <img src="<?php echo $_SERVER['DOCUMENT_ROOT'] . '/resources/default/img/headShot.jpg';?>" alt="Marc" style="width:100%">
+    <img src="<?php echo '/resources/default/img/headShot.jpg';?>" alt="Marc" style="width:100%">
     <h1>Marc Teixeira</h1>
     <p class="profileTitle">Software Engineer, Programmer</p>
     <p>Grand Canyon University</p>

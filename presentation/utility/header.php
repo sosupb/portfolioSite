@@ -4,7 +4,7 @@
     session_start();
 
     if(!isset($_SESSION['counter'])) {
-        $file = fopen("counter.txt", "r");
+        $file = fopen($_SERVER['DOCUMENT_ROOT'] . "/resources/default/counter.txt", "r");
         if(is_null($file)){
             ActivityLogger::warning("Could not open file for counter!");
         } else {
@@ -12,7 +12,7 @@
             fclose($file);
             $counter++;
             ActivityLogger::info("Updated unique visit sounter to: " . $counter . "!");
-            $file = fopen("counter.txt", "w");
+            $file = fopen($_SERVER['DOCUMENT_ROOT'] . "/resources/default/counter.txt", "w");
             fwrite($file, $counter);
             fclose($file);
             $_SESSION['counter'] = $counter;

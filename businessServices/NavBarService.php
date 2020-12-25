@@ -32,16 +32,12 @@ class NavBarService {
 	/**
 	 * This method takes in a hyperlink tab and identifies if it is for the current page to send proper CSS
 	 * @return the class type for this hyperlink
-	
-	public String getButtonClass(String id) {
-		FacesContext facesContext = FacesContext.getCurrentInstance();
-		String viewId = facesContext.getViewRoot().getViewId();
+	**/
+	public function getButtonClass($id) {
 		
-		LOGGER.info("The current view id is: " + viewId);
-		System.out.println("The current view id is: " + viewId);
-		if(viewId.equals(id)) {
+		if($_SERVER['PHP_SELF'] == $id) {
 			return "active";
 		}
 		return "";
-	}*/
+	}
 }

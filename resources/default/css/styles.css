@@ -3,7 +3,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #bfbfbf;
+	background-color: gray;
 }
 
 .content h1{
@@ -14,6 +14,7 @@ body {
 /* Profile card styles */
 .profileCard {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+	background-color: royalblue;
 	max-width: 50%;
 	margin-left: auto;
 	margin-right: auto;
@@ -23,7 +24,7 @@ body {
 
 /* Profile card title  */
 .profileTitle {
-	color: grey;
+	color: white;
 	font-size: 18px;
 }
 

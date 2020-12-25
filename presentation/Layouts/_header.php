@@ -37,9 +37,9 @@ include_once $_SERVER['DOCUMENT_ROOT'] . "/presentation/utility/header.php";
   			<a href="<?echo $navService->moveToHomePage();?>" class="logo">Marc D. Teixeira</a>
   			<div class="header-right">
   				<a href="<?echo $navService->moveToHomePage();?>" class="<?echo $navService->getButtonClass("/index.php");?>" >Home</a>
-    			<a href="<?echo $navService->moveToProjectsPage();?>" class="<?echo $navService->getButtonClass("/ProjectsPage.php");?>" >Projects</a>
-    			<a href="<?echo $navService->moveToContactPage();?>" class="<?echo $navService->getButtonClass("/ContactPage.php");?>" >Contact</a>
-    			<a href="<?echo $navService->moveToAboutPage();?>" class="<?echo $navService->getButtonClass("/AboutPage.php");?>" >About</a>
+    			<a href="<?echo $navService->moveToProjectsPage();?>" class="<?echo $navService->getButtonClass("presentation/pages/ProjectsPage.php");?>" >Projects</a>
+    			<a href="<?echo $navService->moveToContactPage();?>" class="<?echo $navService->getButtonClass("presentation/pages/ContactPage.php");?>" >Contact</a>
+    			<a href="<?echo $navService->moveToAboutPage();?>" class="<?echo $navService->getButtonClass("presentation/pages/AboutPage.php");?>" >About</a>
   			</div>
 		</div>
 		

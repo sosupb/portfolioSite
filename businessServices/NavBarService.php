@@ -34,7 +34,6 @@ class NavBarService {
 	 * @return the class type for this hyperlink
 	**/
 	public function getButtonClass($id) {
-	    echo $_SERVER['PHP_SELF'] . "</br>";
 		if($_SERVER['PHP_SELF'] == $id) {
 			return "active";
 		}

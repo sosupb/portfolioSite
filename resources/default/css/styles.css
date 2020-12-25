@@ -63,6 +63,8 @@ body {
 /* Individual card wrapper */
 .projectCardWrapper {
 	width: 100%;
+	position: relative;
+	left: -44px;
 	padding: 30px 0px 58px 46px;
 	overflow: auto;
 }

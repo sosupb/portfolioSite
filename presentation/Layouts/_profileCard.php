@@ -12,9 +12,9 @@
     <h1>Marc Teixeira</h1>
     <p class="profileTitle">Software Engineer, Programmer</p>
     <p>Grand Canyon University</p>
-    <a href="#"><i class="fa fa-twitter"></i></a>
-    <a href="#"><i class="fa fa-linkedin"></i></a>
-    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="twitter.com/sosupb"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/marc-teixeira-79ba3aba/"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/marc.teixeira.7"><i class="fa fa-facebook"></i></a>
     <p class="profileButton">
     	<a href="<?echo $navService->moveToContactPage();?>">Contact</a>
     </p>

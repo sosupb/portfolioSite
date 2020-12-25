@@ -10,14 +10,14 @@ body {
 	text-align: center;
 	color: #c5c79a;
 	font-size: 50px;
-	text-shadow: 1px 3px rgba(0, 0, 0, 0.6);
+	text-shadow: 1px 3px rgba(0, 0, 0, 1);
 	font-family: "Cinzin", "serif";
 }
 
 /* Profile card styles */
 .profileCard {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
-	background-color: royalblue;
+	background-color: white;
 	max-width: 50%;
 	margin-left: auto;
 	margin-right: auto;
@@ -35,7 +35,7 @@ body {
 .profileCard a{
 	text-decoration: none;
 	font-size: 22px;
-	color: black;
+	color: white;
 }
 
 /* Profile card buttons */

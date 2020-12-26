@@ -2,9 +2,6 @@
 	
 	$title = "Home Page";
 	include_once $_SERVER['DOCUMENT_ROOT'] . "/presentation/Layouts/_header.php";
-	
-	$bs = new ProjectListService();
-	$bs = new ActivityLogger($bs);
 ?>
 
 <div class="content">

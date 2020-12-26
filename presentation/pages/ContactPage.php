@@ -4,7 +4,6 @@
 	include_once $_SERVER['DOCUMENT_ROOT'] . "/presentation/Layouts/_header.php";
 	include_once $_SERVER['DOCUMENT_ROOT'] . "/presentation/handlers/mailToHandler.php";
 	
-	$bs = new ProjectListService();
 ?>
 
 	<div class="content">

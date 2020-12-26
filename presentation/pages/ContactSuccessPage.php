@@ -1,9 +1,8 @@
 <?php
 
-$title = "Contact Page";
-include_once $_SERVER['DOCUMENT_ROOT'] . "/presentation/Layouts/_header.php";
+    $title = "Contact Success Page";
+    include_once $_SERVER['DOCUMENT_ROOT'] . "/presentation/Layouts/_header.php";
 
-$bs = new ProjectListService();
 ?>
 
 	<div class="content">

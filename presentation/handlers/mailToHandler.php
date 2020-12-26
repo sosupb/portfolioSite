@@ -8,7 +8,14 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/autoloader.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 
 use Mailgun\Mailgun;
+use Http\Client\Common\PluginClient;
 use Mailgun\HttpClient\HttpClientConfigurator;
+use Mailgun\HttpClient\Plugin\History;
+use Mailgun\HttpClient\RequestBuilder;
+use Mailgun\Hydrator\Hydrator;
+use Mailgun\Hydrator\ModelHydrator;
+use Psr\Http\Client\ClientInterface;
+use Psr\Http\Message\ResponseInterface;
 
 if($_SERVER['REQUEST_METHOD'] == "POST") {
     

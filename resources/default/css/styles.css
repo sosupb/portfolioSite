@@ -199,6 +199,23 @@ body {
 .contactFormWrapper {
 	width : 100%;
 	margin: auto;
+	text-align: center;
+}
+
+/* contact form input fields */
+.contactFormWrapper input[type=text], .contactFormWrapper input[type=email], .contactFormWrapper textarea {
+	margin: 10px;
+}
+
+
+/* contact form field labals */
+.contactFormWrapper label{
+	font-size: 18px;
+}
+
+/* contact form buttons */
+.contactFormWrapper input[type=button] {
+	margin: 10px;
 }
 
 /* Fixed Footer*/

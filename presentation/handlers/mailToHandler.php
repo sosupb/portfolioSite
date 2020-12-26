@@ -11,7 +11,17 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     $message = "From: " . $_POST['name'] . "\nEmail: " . $_POST['email'] . "\nMessage: " . $_POST['message'];
     $essage = wordwrap($message, 70);
     
-    if(mail("sosupb@gmail.com", "Webstie Contact From: " . $_POST['name'], $message)) {
+    $results = false;
+    
+    try {
+        $results = mail("sosupb@gmail.com", "Webstie Contact From: " . $_POST['name'], $message);
+    }
+    catch(Exception $e) {
+        $results = false;
+        ActivityLogger::warning("There was a problem while emailing: " . $e->getMessage());    
+    }
+    
+    if($results) {
         ActivityLogger::info("Email was sent from contact page!");
         header("Location: /presentation/pages/ContactSuccessPage.php");
     } else {

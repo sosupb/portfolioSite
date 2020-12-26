@@ -31,7 +31,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
         $domain = "https://api.mailgun.net/v3/sandbox73434ced47974576958f2c94c24fdc54.mailgun.org";
         
         $results = $mgClient->messages()->send($domain, array(
-            'from' => $_POST['name'] . " <mailgun@https://api.mailgun.net/v3/sandbox73434ced47974576958f2c94c24fdc54.mailgun.org>",
+            'from' => $_POST['email'],
             'to'   => "sosupb@gmail.com",
             'subject' => "Webstie Contact From: " . $_POST['name'], 
             'text' => $message));

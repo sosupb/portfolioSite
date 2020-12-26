@@ -1,6 +1,7 @@
 {
 	"name" : "portfolio/portfolio",
 	"require" : {
-		"monolog/monolog" : "~2.2"
+		"monolog/monolog" : "~2.2",
+		"mailgun/mailgun-php": "^3.2"
 	}
 }

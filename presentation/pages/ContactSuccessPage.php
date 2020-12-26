@@ -1,15 +1,15 @@
 <?php
-	
-	$title = "Contact Page";
-	include_once $_SERVER['DOCUMENT_ROOT'] . "/presentation/Layouts/_header.php";
-	
-	$bs = new ProjectListService();
+
+$title = "Contact Page";
+include_once $_SERVER['DOCUMENT_ROOT'] . "/presentation/Layouts/_header.php";
+
+$bs = new ProjectListService();
 ?>
 
 	<div class="content">
 		<h1>Contact</h1>
 		<div class="contactFormWrapper">
-    		<form action="/presentation/handlers/mailToHandler.php" method="post">
+    		<form action="mailToHandler.php" method="post">
     			<div class="inputWrapper">
     				<label for="name">Name</label>
     				<input id="name" type="text" name="name"><br/>

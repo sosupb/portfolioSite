@@ -8,14 +8,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/autoloader.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 
 use Mailgun\Mailgun;
-use Http\Client\Common\PluginClient;
-use Mailgun\HttpClient\HttpClientConfigurator;
-use Mailgun\HttpClient\Plugin\History;
-use Mailgun\HttpClient\RequestBuilder;
-use Mailgun\Hydrator\Hydrator;
-use Mailgun\Hydrator\ModelHydrator;
-use Psr\Http\Client\ClientInterface;
-use Psr\Http\Message\ResponseInterface;
 
 if($_SERVER['REQUEST_METHOD'] == "POST") {
     
@@ -25,14 +17,12 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     $results = false;
     
     try {
-        $httpClient = new HttpClientConfigurator();
-        $httpClient->setApiKey('04a9c293ecb17f6b5dce7d96fdc09f00-b6190e87-2f09670a');
-        $mgClient = new Mailgun($httpClient);
-        $domain = "sandbox73434ced47974576958f2c94c24fdc54.mailgun.org";
+        $mgClient = Mailgun::create(getenv('MAILGUN_API_KEY'));
+        $domain = getenv('MAILGUN_DOMAIN');
         
         $results = $mgClient->messages()->send($domain, array(
-            'from' => "mailgun@" . $domain,
-            'to'   => "sosupb@gmail.com",
+            'from' => getenv('HEROKU_EMAIL'),
+            'to'   => getenv('MAIN_EMAIL'),
             'subject' => "Webstie Contact From: " . $_POST['name'], 
             'text' => $message));
     }

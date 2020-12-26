@@ -17,7 +17,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     $results = false;
     
     try {
-        $mgClient = new Mailgun('04a9c293ecb17f6b5dce7d96fdc09f00-b6190e87-2f09670a');
+        $mgClient = Mailgun::create('04a9c293ecb17f6b5dce7d96fdc09f00-b6190e87-2f09670a');
         $domain = "https://api.mailgun.net/v3/sandbox73434ced47974576958f2c94c24fdc54.mailgun.org";
         
         $results = $mgClient->sendMessage($domain, array(

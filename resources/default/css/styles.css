@@ -202,19 +202,30 @@ body {
 	text-align: center;
 }
 
+/* Input flex box wrapper */
+.inputWrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
 /* contact form input fields */
 .contactFormWrapper input[type=text], .contactFormWrapper input[type=email], .contactFormWrapper textarea {
 	margin: 10px;
 }
-
 
 /* contact form field labals */
 .contactFormWrapper label{
 	font-size: 18px;
 }
 
-/* contact form buttons */
-.contactFormWrapper input[type=button] {
+/* contact form submit buttons */
+.contactFormWrapper input[type=submit] {
+	margin: 10px;
+}
+
+/* contact form reset buttons */
+.contactFormWrapper input[type=reset] {
 	margin: 10px;
 }
 

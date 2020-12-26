@@ -207,26 +207,34 @@ body {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	width: 75;
 }
 
 /* contact form input fields */
 .contactFormWrapper input[type=text], .contactFormWrapper input[type=email], .contactFormWrapper textarea {
 	margin: 10px;
+	width: 100%;
 }
 
 /* contact form field labals */
 .contactFormWrapper label{
-	font-size: 18px;
+	font-size: 23px;
+	color: #c5c79a;
+	text-shadow: 1px 1px rgba(0, 0, 0, 1);
 }
 
-/* contact form submit buttons */
-.contactFormWrapper input[type=submit] {
+/* contact form submit and reset buttons */
+.contactFormWrapper input[type=submit], .contactFormWrapper input[type=reset] {
 	margin: 10px;
+	background-color: #c5c79a;
+	border: none;
+	width: 100px;
+	height: 40px;
 }
 
-/* contact form reset buttons */
-.contactFormWrapper input[type=reset] {
-	margin: 10px;
+/* contact form submit and reset buttons hover*/
+.contactFormWrapper input[type=submit]:hover, .contactFormWrapper input[type=reset]:hover {
+	background-color: lightgray;
 }
 
 /* Fixed Footer*/

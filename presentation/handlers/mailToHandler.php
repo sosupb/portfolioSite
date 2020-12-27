@@ -7,7 +7,7 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . "/autoloader.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
 
-use Mailgun\Mailgun;
+use PHPMailer\PHPMailer\PHPMailer;
 
 if($_SERVER['REQUEST_METHOD'] == "POST") {
     
@@ -16,18 +16,32 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     
     $results = false;
     
-    try {
-        $mgClient = Mailgun::create(getenv('MAILGUN_API_KEY'));
-        $domain = getenv('MAILGUN_DOMAIN');
-        
-        $results = $mgClient->messages()->send($domain, array(
-            'from' => getenv('HEROKU_EMAIL'),
-            'to'   => getenv('MAIN_EMAIL'),
-            'subject' => "Webstie Contact From: " . $_POST['name'], 
-            'text' => $message));
+    $mailer = new PHPMailer();
+    
+    $mailer->IsSMTP();
+    $mailer->Mailer = "smtp";
+    
+    $mailer->SMTPDebug  = 1;
+    $mailer->SMTPAuth   = TRUE;
+    $mailer->SMTPSecure = "tls";
+    $mailer->Port       = 587;
+    $mailer->Host       = "smtp.gmail.com";
+    $mailer->Username   = getenv('MAIN_EMAIL');
+    $mailer->Password   = getenv('MAIN_EMAIL_PASSWORD');
+    
+    $mailer->IsHTML(true);
+    $mailer->AddAddress(getenv('MAIN_EMAIL'), "Marc Teixeira");
+    $mailer->SetFrom($_POST['email'], $_POST['name']);
+    $mailer->Subject = "Website Contact Email From: " . $_POST['name'];
+    $content = $message;
+    
+    try {        
+        $mailer->MsgHTML($content);
+        $results = $mailer->Send();
     }
     catch(Exception $e) {
         $results = false;
+        var_dump($mailer);
         ActivityLogger::warning("There was a problem while emailing: " . $e->getMessage());    
     }
     
@@ -35,6 +49,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
         ActivityLogger::info("Email was sent from contact page!");
         header("Location: /presentation/pages/ContactSuccessPage.php");
     } else {
+        var_dump($mailer);
         ActivityLogger::warning("Could not send email!");  
     }
 }

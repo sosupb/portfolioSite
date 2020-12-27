@@ -23,14 +23,14 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     
     $mailer->SMTPDebug  = 1;
     $mailer->SMTPAuth   = TRUE;
-    $mailer->SMTPSecure = "tls";
+    $mailer->SMTPSecure = "ssl";
     $mailer->Port       = 587;
     $mailer->Host       = "smtp.gmail.com";
     $mailer->Username   = getenv('MAIN_EMAIL');
     $mailer->Password   = getenv('MAIN_EMAIL_PASSWORD');
     
     $mailer->IsHTML(true);
-    $mailer->AddAddress(getenv('MAIN_EMAIL'), "Marc Teixeira");
+    $mailer->AddAddress(getenv('SECONDARY_EMAIL'), "Marc Teixeira");
     $mailer->SetFrom($_POST['email'], $_POST['name']);
     $mailer->Subject = "Website Contact Email From: " . $_POST['name'];
     $content = $message;

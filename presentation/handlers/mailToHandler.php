@@ -21,7 +21,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     $mailer->IsSMTP();
     $mailer->Mailer = "smtp";
     
-    $mailer->SMTPDebug  = 1;
+    $mailer->SMTPDebug  = 0;
     $mailer->SMTPAuth   = TRUE;
     $mailer->SMTPSecure = "tls";
     $mailer->Port       = 587;

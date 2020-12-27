@@ -23,7 +23,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     
     $mailer->SMTPDebug  = 1;
     $mailer->SMTPAuth   = TRUE;
-    $mailer->SMTPSecure = "ssl";
+    $mailer->SMTPSecure = "tls";
     $mailer->Port       = 587;
     $mailer->Host       = "smtp.gmail.com";
     $mailer->Username   = getenv('MAIN_EMAIL');

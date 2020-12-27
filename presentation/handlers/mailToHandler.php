@@ -11,7 +11,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 
 if($_SERVER['REQUEST_METHOD'] == "POST") {
     
-    $message = "From: " . $_POST['name'] . "\nEmail: " . $_POST['email'] . "\nMessage: " . $_POST['message'];
+    $message = "From: " . $_POST['name'] . "<br/>Email: " . $_POST['email'] . "<br/>Message: " . $_POST['message'];
     $message = wordwrap($message, 70);
     
     $results = false;
@@ -30,6 +30,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     $mailer->Password   = getenv('MAIN_EMAIL_PASSWORD');
     
     $mailer->IsHTML(true);
+    $mailer->AddAddress(getenv('MAIN_EMAIL'), "Marc Teixeira");
     $mailer->AddAddress(getenv('SECONDARY_EMAIL'), "Marc Teixeira");
     $mailer->SetFrom($_POST['email'], $_POST['name']);
     $mailer->Subject = "Website Contact Email From: " . $_POST['name'];

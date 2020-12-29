@@ -43,6 +43,9 @@ body {
 /* Element inside info cards */
 .infoCardElement {
 	background-color: #3f3f3f;
+	margin: 12px;
+	border-radius: 15px;
+	padding: 6px;
 }
 
 /* Profile card styles */

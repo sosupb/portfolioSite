@@ -19,7 +19,7 @@
 		<div class="infoCard">
     		<h2>Education:</h2>
     		<div class="infoCardElement">
-    			<b>Grand Canyon University</b><p>Bachelor of Science in Computer Programming<br/>2019 - preset</p>
+    			<b>Grand Canyon University</b><p>Bachelor of Science in Computer Programming<br/>2019 - present</p>
     		</div>
     		<div class="infoCardElement">
     			<b>San Diego Mesa College</b><p>Associates Degree in Computer Programming<br/>2015 - 2018</p>
@@ -32,17 +32,19 @@
     		<h2>Previous Experience:</h2>
     		<div class="infoCardElement">
         		<b>Internship - IT Assistant, Meadowbrook Middle School<br/>2002</b>
-        			<p>Assisted in multiple types of system debugging to help other faculty lessen their workload.<br/>
-    				   Helping students learn how to navigate Windows and use their login to access academic resources.<br/>
-    				   Servicing systems in the computer labs including physically cleaning them and clearing any non-essential programs that were installed on them.
-    				</p>
+        			<ul>
+        			    <li>Assisted in multiple types of system debugging to help other faculty members lessen their workload.</li>
+    				    <li>Helping students learn how to navigate Windows and use their login to access academic resources.</li>
+    				    <li>Servicing systems in the computer labs including physically cleaning them and clearing any non-essential programs that were installed on them.</li>
+    				</ul>
 			</div>
 			<div class="infoCardElement">
         		<b>Construction Foreman<br/>2003 - present</b>
-        			<p>Delegate tasks to other employees based on their skill levels to speed up individual tasks.<br/>
-    				   Communicating with the job site Owner Representatives to provide the desired end product.<br/>
-    				   Making informed decisions to progress the work being done when potential problems threaten to halt the job completely.
-        			</p>
+        			<ul>
+        			    <li>Delegate tasks to other employees based on their skill levels to speed up individual tasks.</li>
+    				    <li>Communicating with the job site Owner Representatives to provide the desired end product.</li>
+    				    <li>Making informed decisions to progress the work being done when potential problems threaten to halt the job completely.</li>
+        			</ul>
     		</div>
 		</div>
 		

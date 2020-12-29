@@ -28,15 +28,21 @@ body {
 	margin-bottom: 4%;
 	border-radius: 20px;
 	width: 65%;
-	padding: 10px;
+	padding: 25px;
 	color: white;
 	background-color: #2f2f2f;
 }
 
+/* Info card headers */
 .infoCard h2{
 	text-align: center;
 	color: lightgray;
 	font-size: 35px;
+}
+
+/* Element inside info cards */
+.infoCarElement {
+	background-color: #3f3f3f;
 }
 
 /* Profile card styles */

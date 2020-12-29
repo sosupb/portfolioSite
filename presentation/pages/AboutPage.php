@@ -19,19 +19,19 @@
 		<div class="infoCard">
     		<h2>Education:</h2>
     		<div class="infoCardElement">
-    			<b>Grand Canyon University</b><p>Bachelor of Science in Computer Programming<br/>2019 - present</p>
+    			<b>Grand Canyon University</b><p>Bachelor of Science in Computer Programming<span class="infoCardDate">2019 - present</span></p>
     		</div>
     		<div class="infoCardElement">
-    			<b>San Diego Mesa College</b><p>Associates Degree in Computer Programming<br/>2015 - 2018</p>
+    			<b>San Diego Mesa College</b><p>Associates Degree in Computer Programming<span class="infoCardDate">2015 - 2018</span></p>
     		</div>
     		<div class="infoCardElement">
-    			<b>San Diego Miramar College</b><p>Certificate of Performance in Computer Programming<br/>2018</p>
+    			<b>San Diego Miramar College</b><p>Certificate of Performance in Computer Programming<span class="infoCardDate">2018</span></p>
     		</div>
 		</div>
 		<div class="infoCard">
     		<h2>Previous Experience:</h2>
     		<div class="infoCardElement">
-        		<b>Internship - IT Assistant, Meadowbrook Middle School<span style="text-align: right">2002</span></b>
+        		<b>Internship - IT Assistant, Meadowbrook Middle School<span class="infoCardDate">2002</span></b>
         			<ul>
         			    <li>Assisted in multiple types of system debugging to help other faculty members lessen their workload.</li>
     				    <li>Helping students learn how to navigate Windows and use their login to access academic resources.</li>
@@ -39,7 +39,7 @@
     				</ul>
 			</div>
 			<div class="infoCardElement">
-        		<b>Construction Foreman<br/>2003 - present</b>
+        		<b>Construction Foreman<span class="infoCardDate">2003 - present</span></b>
         			<ul>
         			    <li>Delegate tasks to other employees based on their skill levels to speed up individual tasks.</li>
     				    <li>Communicating with the job site Owner Representatives to provide the desired end product.</li>

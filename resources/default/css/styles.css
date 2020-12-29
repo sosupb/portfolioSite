@@ -24,7 +24,10 @@ body {
 
 /* Info card on about page */
 .infoCard {
-	margin: 4%;
+	margin: auto;
+	margin-bottom: 4%;
+	border-radius: 20px;
+	width: 65%;
 	padding: 10px;
 	color: white;
 	background-color: #2f2f2f;
@@ -32,7 +35,8 @@ body {
 
 .infoCard h2{
 	text-align: center;
-	color: gray;
+	color: lightgray;
+	font-size: 35px;
 }
 
 /* Profile card styles */

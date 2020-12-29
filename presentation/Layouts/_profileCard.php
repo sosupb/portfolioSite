@@ -12,7 +12,7 @@
     <h1>Marc Teixeira</h1>
     <p class="profileTitle">Software Engineer, Programmer</p>
     <p style="color: white">Grand Canyon University</p>
-    <a href="https://www.twitter.com/sosupb"><i class="fa fa-twitter" target="_blank"></i></a>
+    <a href="https://www.twitter.com/sosupb" target="_blank"><i class="fa fa-twitter"></i></a>
     <a href="https://www.linkedin.com/in/marc-teixeira-79ba3aba/" target="_blank"><i class="fa fa-linkedin"></i></a>
     <a href="https://www.instagram.com/teixeirajr.marc/" target="blank"><i class="fa fa-instagram"></i></a>
     <a href="https://www.facebook.com/marc.teixeira.7" target="blank"><i class="fa fa-facebook"></i></a>

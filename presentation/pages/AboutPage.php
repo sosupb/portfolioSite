@@ -31,7 +31,7 @@
 		<div class="infoCard">
     		<h2>Previous Experience:</h2>
     		<div class="infoCardElement">
-        		<b>Internship - IT Assistant, Meadowbrook Middle School<br/>2002</b>
+        		<b>Internship - IT Assistant, Meadowbrook Middle School<br/><span style="text-align: left">2002</span></b>
         			<ul>
         			    <li>Assisted in multiple types of system debugging to help other faculty members lessen their workload.</li>
     				    <li>Helping students learn how to navigate Windows and use their login to access academic resources.</li>

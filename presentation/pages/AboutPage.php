@@ -19,13 +19,13 @@
 		<div class="infoCard">
     		<h2>Education:</h2>
     		<div class="infoCardElement">
-    			<b>Grand Canyon University</b><p>Bachelor of Science in Computer Programming<span class="infoCardDate">2019 - present</span></p>
+    			<b>Grand Canyon University<span class="infoCardDate">2019 - present</span></b><p>Bachelor of Science in Computer Programming</p>
     		</div>
     		<div class="infoCardElement">
-    			<b>San Diego Mesa College</b><p>Associates Degree in Computer Programming<span class="infoCardDate">2015 - 2018</span></p>
+    			<b>San Diego Mesa College<span class="infoCardDate">2015 - 2018</span></b><p>Associates Degree in Computer Programming</p>
     		</div>
     		<div class="infoCardElement">
-    			<b>San Diego Miramar College</b><p>Certificate of Performance in Computer Programming<span class="infoCardDate">2018</span></p>
+    			<b>San Diego Miramar College<span class="infoCardDate">2018</span></b><p>Certificate of Performance in Computer Programming</p>
     		</div>
 		</div>
 		<div class="infoCard">

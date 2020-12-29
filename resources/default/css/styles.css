@@ -6,6 +6,14 @@ body {
 	background-color: gray;
 }
 
+/* Content wrapper */
+.content {
+	display: block;
+	margin-bottom: 90px;
+	position: relative;
+}
+
+/* Content headers */
 .content h1{
 	text-align: center;
 	color: #c5c79a;
@@ -16,9 +24,10 @@ body {
 
 /* Info card on about page */
 .infoCard {
-	margin-left: 4%;
+	margin: 4%;
+	padding: 10px;
 	color: white;
-	background-color: dark-gray;
+	background-color: #2f2f2f;
 }
 
 
@@ -194,13 +203,6 @@ body {
   .header-right {
       float: none;
   }
-}
-
-/* Content wrapper */
-.content {
-	display: block;
-	margin-bottom: 60px;
-	position: relative;
 }
 
 /* contact form styles */

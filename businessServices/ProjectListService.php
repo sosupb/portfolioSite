@@ -16,7 +16,7 @@ class ProjectListService {
 		array_push($this->projects, Project::settingConstructor("Music Album Library Application", "/resources/default/img/albumLibraryThumbnail.png", "PHP, HTML, CSS, SQL", "CI/CD, git, backend design", "2020", 
 										"Web application for users to store music album information. "
 		                                . "Users are allowed to create an account and add/rate albums in their library.", "/resources/default/img/albumLibraryPanel.png"));
-		array_push($this->projects, Project::settingConstructor("Personal Store Application", "resources/default/img/personalStoreThumbnail.png", "C#, ASP.NET, Razor Views, MySQL", "Visual Studio, MVC, CI/CD, GitHub workflows", "2022", 
+		array_push($this->projects, Project::settingConstructor("Personal Store Application", "/resources/default/img/personalStoreThumbnail.png", "C#, ASP.NET, Razor Views, MySQL", "Visual Studio, MVC, CI/CD, GitHub workflows", "2022", 
 		                                "A store application where the primary user may add personal products for sale and registered users may login too purcahse the items throug ha cart and cheout system",
 		                                "/resources/default/img/personalStorePanel.png"));
 		ActivityLogger::info("Created list of projects!");
